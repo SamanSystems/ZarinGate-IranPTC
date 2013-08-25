@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             $_SESSION['invonum'] = $result>Authority;
             header("Location: $go");
         }else{
-        	echo'ERR: '.$result['Status'];
+        	echo'ERR: '.$result->Status;
             die();
         }
 
